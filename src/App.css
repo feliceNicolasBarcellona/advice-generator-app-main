@@ -1,38 +1,62 @@
-.App {
+main {
+  max-width: 1440px;
+  height: 98vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(218, 23%, 16%);
+  padding: 1rem;
+}
+
+.card-body {
+  height: 192px;
+}
+
+.loading {
+  font-size: 14px;
+  color: hsl(193, 38%, 86%);
+}
+
+.response-error {
+  font-size: 14px;
+  color: hsl(9, 100%, 64%);
+}
+
+.divider-desktop {
+  display: block;
+  margin: 0px auto;
+}
+
+.divider-mobile {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 768px) {
+  main {
+    width: 375px;
+    padding: 0 15px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .card-body {
+    height: 170px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .divider-desktop {
+    display: none;
+  }
+
+  .divider-mobile {
+    display: block;
+    margin: 45px auto;
   }
 }

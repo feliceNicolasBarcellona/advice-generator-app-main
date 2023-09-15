@@ -1,0 +1,17 @@
+.card {
+  background-color: hsl(217, 19%, 24%);
+  height: 332px;
+  width: 100%;
+  max-width: 540px;
+  border-radius: 15px;
+  padding: 50px 32px 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    padding: 42px 20px;
+    border-radius: 10px;
+    height: 315px;
+  }
+}
